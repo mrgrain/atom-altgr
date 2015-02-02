@@ -1,10 +1,9 @@
 Altgr = require '../lib/altgr'
+AltGrManager = require '../lib/altgr-manager'
 
-# Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
-#
-# To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
-# or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe "when Altgr is activated", ->
-  it "initializes the AltgrManager", ->
-    expect(atom.altgr).toBe false
+describe "when AltGrManager is constructed", ->
+  it "the event Queue is empty", ->
+    altGrManager = new AltGrManager
+    expect(altGrManager).toBeDefined()
+    expect(altGrManager.eventQueue.length).toBe(0)

@@ -1,5 +1,5 @@
 module.exports =
-class AtomAltgr
+class AltGrManager
 
   #Section One: (De)Register Handlers
   constructor: ->
