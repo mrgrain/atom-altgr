@@ -1,5 +1,5 @@
 # atom-altgr package
 
 Fixes AltGr keys.
-
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+This will overwrite any custom binding, if a normal character is created from
+altgr-<key> on your keyboard layout.
